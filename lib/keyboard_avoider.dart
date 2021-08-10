@@ -139,7 +139,7 @@ class _KeyboardAvoiderState extends State<KeyboardAvoider> with WidgetsBindingOb
   }
 
   void _resize() {
-    if (context == null) {
+    if (!mounted) {
       return;
     }
 
@@ -186,7 +186,7 @@ class _KeyboardAvoiderState extends State<KeyboardAvoider> with WidgetsBindingOb
   }
 
   void _scrollToFocusedObject() {
-    if (context == null) {
+    if (!mounted) {
       return;
     }
 
